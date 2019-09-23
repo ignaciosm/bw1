@@ -1,11 +1,11 @@
 // Home Content
 
-.home {
+  .wrapper {
+    width: 70%;
+    margin-top: 10%;
+    height: 300px;
+    max-height: 100%;
 
-  .intro {
-    .hero {
-      border-radius: 5px;
-    }
 
     h2 {
       padding: 15px;
@@ -17,128 +17,75 @@
   
   }
 
-  .space-images {
+  .intro, .already {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    background: @container;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding: 3% 0;
 
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-
-      @media @tablet {
-        width: 90%;
-        margin: 20px 5%;
-      }
+    h2 {
+      width: 100%;
+      text-align: center;
     }
-
-    .sky, .launch {
-      @media @tablet {
-        display: none;
-      }
-    }
-
-  }
-
-  .visit-planets {
-    padding: 15px;
-
-    h3 {
-      margin-top: 11px;
-    }
-
-    p {
-      margin-top: 13px;
-    }
-  }
-
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    .my-flex();
-
-    @media @tablet {
-      flex-direction: column-reverse;
-      padding: 4%;
-      margin-top: 4%;
-    }
-
-    .walk-text {
-      width: 50%;
-
-      @media @tablet {
-        width: 100%;
-      }
-
-      h3 {
-        margin-bottom: 10px;
-      }
-
-      p {
-        margin-bottom: 26px;
-      }
-
-      .btn {
-        button {
-          .my-buttons(@btn-bg-color,@porcelain);
-
-          &:hover {
-            .my-buttons(@porcelain,@btn-bg-color);
-          }
-        }
-      }
-    }
-
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-
-      @media @tablet {
-        width: 100%;
-        padding: 0;
-        margin: 0 0 4% 0;
-      }
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-    }
-  }
-
-  .form {
-    font-size: 1.6rem;
-    padding: 4%;
-    border-top: 1px solid #dee2e6;
-
     form {
-    .my-flex();
-    }
+      width: 80%;
+      text-align: center;
+      margin: 4% 0;
 
-    .form-items-container {
-      width: 50%;
-    }
-  
-    .form-item {
-      margin: 2%;
-    }
-
-    .btn {
-      width: 50%;
-      button {
-        .my-buttons(@btn-bg-color,@porcelain);
-
-        &:hover {
-          .my-buttons(@porcelain,@btn-bg-color);
-        }
+      .form-item, .form-item>input {
+        line-height: 1.4;
+        font-size: 1.6rem;
+        padding: 5px;
       }
+
+
+
+      .name {
+        display: flex;
+        justify-content: space-between;
+      }
+      .type{
+        display: flex;
+        justify-content: space-around;
+      }      
+
+      .checkbox-container {
+        width: 48%;
+      }
+
+
     }
-  
+
+.btn {
+  line-height: 1.4;
+  font-size: 1.8rem;
+  padding: 8px;
+  font-weight: 600;
+  background: @cta-button;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#email, #username, #signup {
+  width: 100%;
+}
+
+#signup {
+  margin-top: 5%;
+}
+
+#first-name, #last-name {
+  width: 47%;
+}
   }
-  
- 
-}// home
+
+.already {
+  // background: @container;
+  .already-item {
+    width: 44%;
+  }
+}

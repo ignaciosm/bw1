@@ -1,0 +1,326 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  max-width: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  height: 100vh;
+  background-image: url("../img/hero1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  margin: 0 auto;
+  background: #F6F6F6;
+}
+nav .title {
+  font-size: 4rem;
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+  margin: 1% 0;
+}
+@media (max-width: 500px) {
+  nav .title {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background: #F6F6F6;
+    border-bottom: 1px solid #dee2e6;
+    margin: 0;
+    padding: 1% 0;
+    background: hsla(235, 88%, 49%, 0.6);
+  }
+}
+nav .nav-links {
+  width: 500px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1% 0 1.5%;
+}
+@media (max-width: 500px) {
+  nav .nav-links {
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
+    line-height: 2;
+    margin-top: 50px;
+  }
+}
+nav .nav-links .link {
+  width: 20%;
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-align: center;
+  color: #454A59;
+}
+@media (max-width: 500px) {
+  nav .nav-links .link {
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
+    line-height: 2;
+  }
+}
+footer {
+  color: #22283B;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 70%;
+  margin-top: 10%;
+  height: 300px;
+  max-height: 100%;
+}
+.wrapper h2 {
+  padding: 15px;
+}
+.wrapper p {
+  padding: 0 15px;
+}
+.intro,
+.already {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #E8FCDB;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  padding: 3% 0;
+}
+.intro h2,
+.already h2 {
+  width: 100%;
+  text-align: center;
+}
+.intro form,
+.already form {
+  width: 80%;
+  text-align: center;
+  margin: 4% 0;
+}
+.intro form .form-item,
+.already form .form-item,
+.intro form .form-item > input,
+.already form .form-item > input {
+  line-height: 1.4;
+  font-size: 1.6rem;
+  padding: 5px;
+}
+.intro form .name,
+.already form .name {
+  display: flex;
+  justify-content: space-between;
+}
+.intro form .type,
+.already form .type {
+  display: flex;
+  justify-content: space-around;
+}
+.intro form .checkbox-container,
+.already form .checkbox-container {
+  width: 48%;
+}
+.intro .btn,
+.already .btn {
+  line-height: 1.4;
+  font-size: 1.8rem;
+  padding: 8px;
+  font-weight: 600;
+  background: #FF8A59;
+  border-radius: 10px;
+  width: 100%;
+}
+.intro #email,
+.already #email,
+.intro #username,
+.already #username,
+.intro #signup,
+.already #signup {
+  width: 100%;
+}
+.intro #signup,
+.already #signup {
+  margin-top: 5%;
+}
+.intro #first-name,
+.already #first-name,
+.intro #last-name,
+.already #last-name {
+  width: 47%;
+}
+.already .already-item {
+  width: 44%;
+}
