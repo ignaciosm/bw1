@@ -1,0 +1,54 @@
+// Navigation code here
+
+nav {
+  .my-flex(column);
+  width: 1000px;
+  margin: 0 auto;
+  background: @nav-bg;
+
+  .title {
+    font-size: 4rem;
+    font-family: @headings;
+    color: @header-font-color;
+    margin: 1% 0;
+
+    @media @phone {
+      width: 100%;
+      text-align: center;
+      height: @nav-height;
+      position: fixed;
+      top: 0;
+      background: @nav-bg;
+      border-bottom: 1px solid @main-border-color;
+      margin: 0;
+      padding: 1% 0;
+      background: fadein(hsla(235, 88%, 49%, 0.5), 10%);
+    
+    }
+  }
+
+  .nav-links {
+    width: 500px;
+    max-width: 100%;
+    .my-flex();
+    margin: 1% 0 1.5%;
+
+    @media @phone {
+      flex-direction: column;
+      .mobile-style();
+      margin-top: @nav-height;
+    }
+
+    .link {
+      width: 20%;
+      font-size: 1.6rem;
+      text-decoration: none;
+      text-align: center;
+      color: @nav-font;
+
+      @media @phone {
+        .mobile-style()
+      }
+    }
+  }
+}
